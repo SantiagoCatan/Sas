@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
 $colorDeLetra:black;
 $fondos:slategrey;
+*{
+    margin: 0px;
+    padding: 0px;
+}
 /*extend*/
 .boton{
     width:5em;
@@ -258,10 +262,10 @@ section.redes{
 .footer{
     grid-area: footer;
 }
-.Alliphone{
-        
-    background-color: beige;
 
+.AllIphone{
+    
+    background-color: beige;
     color: black;
     font-weight: bolder;
     font-family: "Roboto", sans-serif;
@@ -284,7 +288,7 @@ section.redes{
     body{
         background-color: aqua;
     }
-    .Alliphone{
+    .AllIphone{
 
         background-color: beige;
     
@@ -306,14 +310,11 @@ section.redes{
          "footer";
     }
 }
-
-
-
 @media (min-width:720px){
     body{
         background-color: blueviolet;
     }
-    .Alliphone{
+    .AllIphone{
         background-color: beige;
         color: black;
         font-weight: bolder;
@@ -335,8 +336,8 @@ section.redes{
 
 
     .boton{
-        width:5em;
-        height:5em;
+        width:2em;
+        height:2em;
     }
     
     /*mixin*/
@@ -354,11 +355,11 @@ section.redes{
     .cabecera{
         h1{
 
-            font-size:7em;
+            font-size:3em;
         }
         .logo{
             img{
-               @include sizes(7em,7em );
+               @include sizes(4em,4em);
             }
         }
         
@@ -385,14 +386,13 @@ section.redes{
     section.cabeceraMain{
          grid-template-columns: 62em;
         grid-template-rows: 40em;
-        margin-bottom: 23em;
 
     }
         .cabeceraSectores{
             margin-top:37em;
             padding: 1em;
             li{
-                margin-bottom: 5em;
+                margin-bottom: 3em;
 
                 &:hover{
                     transform: scale(1.25);
@@ -400,7 +400,7 @@ section.redes{
             
                 a{
                     font-size: 3em;
-                    padding: 5em;
+                    padding: 1em;
                     word-spacing: 0em;
                     letter-spacing: 0.5em;
                 }
@@ -415,14 +415,13 @@ section.redes{
     
     section.iphones{
         .TituloIphone{
-            font-size: 3em;
-            padding: 0em 9em;
+            font-size: 1em;
+            padding: 0em 14em;
             margin: 2em 3em;
         }
         .iphone-{
             img{
-                height: 600px;
-                width: 500px;
+                @include sizes(300px,200px);
             }
            
             .Caracteristica{

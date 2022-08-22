@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 /*extend*/
 .boton, .headerRC .carritoSector a img, .headerRC .registroSector a img {
   width: 5em;
@@ -220,7 +225,7 @@ section.redes .redes ul li:hover {
   grid-area: footer;
 }
 
-.Alliphone {
+.AllIphone {
   background-color: beige;
   color: black;
   font-weight: bolder;
@@ -238,7 +243,7 @@ section.redes .redes ul li:hover {
   body {
     background-color: aqua;
   }
-  .Alliphone {
+  .AllIphone {
     background-color: beige;
     color: black;
     font-weight: bolder;
@@ -256,7 +261,7 @@ section.redes .redes ul li:hover {
   body {
     background-color: blueviolet;
   }
-  .Alliphone {
+  .AllIphone {
     background-color: beige;
     color: black;
     font-weight: bolder;
@@ -269,19 +274,19 @@ section.redes .redes ul li:hover {
     grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphones" "redes redes" " footer footer";
   }
   .boton, .headerRC .registroSector a img, .headerRC .carritoSector a img {
-    width: 5em;
-    height: 5em;
+    width: 2em;
+    height: 2em;
   }
   /*mixin*/
   .HeaderSectores {
     padding: 7em;
   }
   .cabecera h1 {
-    font-size: 7em;
+    font-size: 3em;
   }
   .cabecera .logo img {
-    height: 7em;
-    width: 7em;
+    height: 4em;
+    width: 4em;
   }
   .headerRC {
     padding: 11em 18em;
@@ -295,33 +300,32 @@ section.redes .redes ul li:hover {
   section.cabeceraMain {
     grid-template-columns: 62em;
     grid-template-rows: 40em;
-    margin-bottom: 23em;
   }
   .cabeceraSectores {
     margin-top: 37em;
     padding: 1em;
   }
   .cabeceraSectores li {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
   }
   .cabeceraSectores li:hover {
     transform: scale(1.25);
   }
   .cabeceraSectores li a {
     font-size: 3em;
-    padding: 5em;
+    padding: 1em;
     word-spacing: 0em;
     letter-spacing: 0.5em;
   }
   /*/ iphones/*/
   section.iphones .TituloIphone {
-    font-size: 3em;
-    padding: 0em 9em;
+    font-size: 1em;
+    padding: 0em 14em;
     margin: 2em 3em;
   }
   section.iphones .iphone- img {
-    height: 600px;
-    width: 500px;
+    height: 200px;
+    width: 300px;
   }
   section.iphones .iphone- .Caracteristica {
     padding: 0em 17em;
