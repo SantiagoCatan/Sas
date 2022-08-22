@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200;300&family=Roboto:ital,wght@0,100;0,300;1,700&display=swap");
+/*extend*/
+.boton, .headerRC .carritoSector a img, .headerRC .registroSector a img {
+  width: 5em;
+  height: 5em;
+  border: 1em double black;
+}
+
+/*mixin*/
 .Alliphone {
   background-color: wheat;
 }
@@ -28,8 +36,8 @@
   display: flex;
 }
 .cabecera .logo img {
-  height: 8em;
-  width: 8em;
+  height: 7em;
+  width: 7em;
 }
 
 .headerRC {
@@ -43,20 +51,9 @@
 .headerRC .registroSector a {
   display: flex;
 }
-.headerRC .registroSector a img {
-  width: 5em;
-  height: 5em;
-  border: 1em double black;
-}
 .headerRC .carritoSector a {
   display: flex;
 }
-.headerRC .carritoSector a img {
-  width: 5em;
-  height: 5em;
-  border: 1em double black;
-}
-
 section.cabeceraMain {
   display: grid;
   grid-template-columns: 62em;
@@ -82,6 +79,9 @@ section.cabeceraMain {
   border: 1em double black;
   list-style-type: none;
 }
+.cabeceraSectores li:hover {
+  transform: scale(1.25);
+}
 .cabeceraSectores li a {
   color: black;
   font-size: 3em;
@@ -92,10 +92,6 @@ section.cabeceraMain {
   letter-spacing: 0.5em;
   font: bolder;
   text-align: center;
-}
-
-.cabeceraSectores ul li:hover {
-  transform: scale(1.25);
 }
 
 /*/ iphones/*/
@@ -220,9 +216,47 @@ section.redes .redes ul li:hover {
   grid-area: footer;
 }
 
-.Alliphone {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
+@media screen and (min-width: 520px) {
+  body {
+    background-color: aqua;
+  }
+  .Alliphone {
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-areas: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
+  }
+}
+@media (min-width: 720px) {
+  body {
+    background-color: blueviolet;
+  }
+  .Alliphone {
+    background-color: beige;
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphones" "redes redes" " footer footer";
+  }
+}
+.AllIphone {
+  background-color: rgb(201, 21, 21);
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  grid-template-columns: auto;
+  gap: 15px;
+  grid-template-areas: " index index  index " "CarruselMain  CarruselMain  CarruselMain " "menuPrincipal menuPrincipal menuPrincipal " "listas  listas  listas " "miniBanners miniBanners miniBanners" "redes redes redes " " footer footer footer ";
 }/*# sourceMappingURL=estilos.css.map */
