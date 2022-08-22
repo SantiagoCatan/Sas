@@ -7,8 +7,12 @@
 }
 
 /*mixin*/
-.Alliphone {
-  background-color: wheat;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .HeaderSectores {
@@ -216,6 +220,20 @@ section.redes .redes ul li:hover {
   grid-area: footer;
 }
 
+.Alliphone {
+  background-color: beige;
+  color: black;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-content: center;
+  gap: 20px;
+  grid-template-areas: "HeaderSectores" "RC" "cabecera" "iphones" "redes" "footer";
+}
+
 @media screen and (min-width: 520px) {
   body {
     background-color: aqua;
@@ -250,13 +268,112 @@ section.redes .redes ul li:hover {
     gap: 20px;
     grid-template-areas: "HeaderSectores HeaderSectores" "RC RC" "cabecera cabecera" "iphones iphones" "redes redes" " footer footer";
   }
+  .boton, .headerRC .registroSector a img, .headerRC .carritoSector a img {
+    width: 5em;
+    height: 5em;
+  }
+  /*mixin*/
+  .HeaderSectores {
+    padding: 7em;
+  }
+  .cabecera h1 {
+    font-size: 7em;
+  }
+  .cabecera .logo img {
+    height: 7em;
+    width: 7em;
+  }
+  .headerRC {
+    padding: 11em 18em;
+  }
+  .headerRC .registroSector a {
+    display: flex;
+  }
+  .headerRC .carritoSector a {
+    display: flex;
+  }
+  section.cabeceraMain {
+    grid-template-columns: 62em;
+    grid-template-rows: 40em;
+    margin-bottom: 23em;
+  }
+  .cabeceraSectores {
+    margin-top: 37em;
+    padding: 1em;
+  }
+  .cabeceraSectores li {
+    margin-bottom: 5em;
+  }
+  .cabeceraSectores li:hover {
+    transform: scale(1.25);
+  }
+  .cabeceraSectores li a {
+    font-size: 3em;
+    padding: 5em;
+    word-spacing: 0em;
+    letter-spacing: 0.5em;
+  }
+  /*/ iphones/*/
+  section.iphones .TituloIphone {
+    font-size: 3em;
+    padding: 0em 9em;
+    margin: 2em 3em;
+  }
+  section.iphones .iphone- img {
+    height: 600px;
+    width: 500px;
+  }
+  section.iphones .iphone- .Caracteristica {
+    padding: 0em 17em;
+  }
+  section.iphones .iphone- .Caracteristica h2 {
+    font-size: 4em;
+  }
+  section.iphones .iphone- .Caracteristica li {
+    font-size: 2em;
+  }
+  /*/Redes/*/
+  section.redes {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
+  }
+  section.redes h1 {
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+  section.redes ul a {
+    width: 5em;
+    height: 3em;
+    padding: 2em;
+  }
+  section.redes img {
+    width: 300px;
+    height: 100px;
+  }
+  section.redes .redes ul li:hover {
+    transform: scale(1.2);
+  }
+  /*/footer /*/
+  .footer {
+    padding: 2em;
+  }
+  .footer h1 {
+    font-size: 1em;
+  }
+  .footer h1 img {
+    height: 10em;
+    width: 10em;
+  }
 }
-.AllIphone {
-  background-color: rgb(201, 21, 21);
-  color: black;
-  font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  grid-template-columns: auto;
-  gap: 15px;
-  grid-template-areas: " index index  index " "CarruselMain  CarruselMain  CarruselMain " "menuPrincipal menuPrincipal menuPrincipal " "listas  listas  listas " "miniBanners miniBanners miniBanners" "redes redes redes " " footer footer footer ";
+@media (min-width: 720px) and (min-width: 1200px) {
+  .AllIphone {
+    background-color: rgb(201, 21, 21);
+    color: black;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    grid-template-columns: auto;
+    gap: 15px;
+    grid-template-areas: " index index  index " "CarruselMain  CarruselMain  CarruselMain " "menuPrincipal menuPrincipal menuPrincipal " "listas  listas  listas " "miniBanners miniBanners miniBanners" "redes redes redes " " footer footer footer ";
+  }
 }/*# sourceMappingURL=estilos.css.map */
