@@ -320,7 +320,7 @@ section.redes{
         font-weight: bolder;
         font-family: "Roboto", sans-serif;
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: repeat(2,1fr);
         justify-items: center;
         align-content: center;
          gap:20px;
@@ -403,6 +403,7 @@ section.redes{
                     padding: 1em;
                     word-spacing: 0em;
                     letter-spacing: 0.5em;
+                    text-align: center;
                 }
             }
         }
@@ -416,16 +417,16 @@ section.redes{
     section.iphones{
         .TituloIphone{
             font-size: 1em;
-            padding: 0em 14em;
-            margin: 2em 3em;
+            padding: 2em 8em;
+            margin: 2em 0em;
         }
         .iphone-{
             img{
-                @include sizes(300px,200px);
+                @include sizes(250px,100px);
             }
            
             .Caracteristica{
-                padding: 0em 17em;
+               
                 h2{
                     
                     font-size: 4em;
@@ -489,11 +490,9 @@ section.redes{
 
 @media (min-width:1200px) {
     .AllIphone{
-        background-color: rgb(201, 21, 21);
         color: black;
         font-weight: bolder;
         font-family: "Roboto", sans-serif;
-        grid-template-columns: auto ;
          gap: 15px;
          grid-template-areas:
          "HeaderSectores HeaderSectores HeaderSectores"
@@ -504,7 +503,6 @@ section.redes{
          " footer footer footer";
     }
     
-
     .boton{
         width:2em;
         height:2em;
@@ -573,6 +571,7 @@ section.redes{
                     padding: 1em;
                     word-spacing: 0em;
                     letter-spacing: 0.5em;
+                    text-align: center;
                 }
             }
         }
@@ -586,16 +585,16 @@ section.redes{
     section.iphones{
         .TituloIphone{
             font-size: 1em;
-            padding: 0em 14em;
-            margin: 2em 3em;
+            padding: 2em 8em;
+            margin: 2em 0em;
         }
         .iphone-{
             img{
-                @include sizes(300px,200px);
+                @include sizes(250px,100px);
             }
            
             .Caracteristica{
-                padding: 0em 17em;
+               
                 h2{
                     
                     font-size: 4em;
@@ -652,6 +651,7 @@ section.redes{
             width:10em ;
         }
     }
+
+
 }
-}
-}
+}}
