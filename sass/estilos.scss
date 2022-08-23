@@ -496,15 +496,162 @@ section.redes{
         grid-template-columns: auto ;
          gap: 15px;
          grid-template-areas:
-                          " index index  index " 
-                          "CarruselMain  CarruselMain  CarruselMain "
-                          "menuPrincipal menuPrincipal menuPrincipal "
-                          "listas  listas  listas " 
-                          "miniBanners miniBanners miniBanners" 
-                          "redes redes redes "
-                          " footer footer footer ";
+         "HeaderSectores HeaderSectores HeaderSectores"
+         "RC RC RC"
+         "cabecera cabecera cabecera"
+         "iphones iphones iphones"
+         "redes  redes redes"
+         " footer footer footer";
+    }
+    
+
+    .boton{
+        width:2em;
+        height:2em;
+    }
+    
+    /*mixin*/
+    @mixin sizes($width,$heigth){
+        height:$heigth;
+        width:$width;
     }
     
     
+    .HeaderSectores{
+        padding: 7em;
+    
+    }
+    
+    .cabecera{
+        h1{
+
+            font-size:3em;
+        }
+        .logo{
+            img{
+               @include sizes(4em,4em);
+            }
+        }
+        
+    }
+    
+    .headerRC{
+        padding: 11em 18em;
+        .registroSector a{
+            display: flex;
+            img {
+                @extend .boton;
+        }
+        }
+        .carritoSector a{
+            display: flex;
+             img {
+              @extend .boton;
+           
+        }
+        }
+    }
+    
+    
+    section.cabeceraMain{
+         grid-template-columns: 62em;
+        grid-template-rows: 40em;
+
+    }
+        .cabeceraSectores{
+            margin-top:37em;
+            padding: 1em;
+            li{
+                margin-bottom: 3em;
+
+                &:hover{
+                    transform: scale(1.25);
+                }
+            
+                a{
+                    font-size: 3em;
+                    padding: 1em;
+                    word-spacing: 0em;
+                    letter-spacing: 0.5em;
+                }
+            }
+        }
+        
+    
+    
+    /*/ iphones/*/
+    
+    
+    
+    section.iphones{
+        .TituloIphone{
+            font-size: 1em;
+            padding: 0em 14em;
+            margin: 2em 3em;
+        }
+        .iphone-{
+            img{
+                @include sizes(300px,200px);
+            }
+           
+            .Caracteristica{
+                padding: 0em 17em;
+                h2{
+                    
+                    font-size: 4em;
+                }
+                li{
+                    font-size:2em ;
+                    
+                }
+            }
+   
+        }
+    }
+    
+    /*/Redes/*/
+    section.redes{
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding: 2em;
+        h1{
+            
+            font-size: 5em;
+            margin-bottom: 1em;
+        }
+        ul{
+        
+            a {
+                width:5em; 
+                height:3em;
+                padding: 2em;
+            }
+    
+        }
+        img {
+            width: 300px ;
+            height: 100px;
+        
+        }
+        .redes ul li:hover{
+            transform: scale(1.2);
+        }
+        
+    }
+    
+    
+    /*/footer /*/
+    
+    .footer{
+        padding: 2em; 
+        h1{
+           
+            font-size:1em ;
+        img {
+            height:10em  ;
+            width:10em ;
+        }
+    }
+}
 }
 }
